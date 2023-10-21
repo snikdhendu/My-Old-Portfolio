@@ -1,0 +1,298 @@
+/* RESPONSIVE */
+
+section {
+    max-width: 500px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+html {
+    font-size: 55%;
+}
+
+.home {
+    padding: 0 3% 23rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 4.9rem;
+}
+
+.content h3 {
+    font-size: 5rem;
+}
+
+.content .social-icon a {
+    margin: 2.5rem .75rem 3rem;
+}
+.home .circle {
+    width: 222px;
+    height: 253px;
+}
+.home .passion-container .passion-box {
+    width: 450px;
+    height: 450px;
+}
+.home .passion-container .passion-box{
+    left: -26px;
+}
+.home .overlay {
+    position: fixed;
+    top: 56rem;
+    left: 75%;
+    right: 0;
+    transform: rotate(90deg) translate(-50%, 69%) scaleY(-2);
+    border-width: 27.9rem;
+}
+.home .passion-box .passion{
+    padding: 13px 13px;
+}
+.home .passion-box .passion:nth-child(1){
+        transform: rotate(-90deg) translate(281px,-361px);
+    }
+    .home .passion-box .passion:nth-child(1) i{
+        margin-right: 0;
+
+    }
+    .home .passion-box .passion:nth-child(2){
+        transform: rotate(0deg) translate(152px,-223px);
+    }
+    .home .passion-box .passion:nth-child(3){
+        transform: rotate(90deg) translate(287px,-60px);
+    }
+    .home .passion-box .passion:nth-child(4){
+        transform: rotate(180deg) translate(438px,-220px);
+    }
+.home .content {
+    height: 57.8rem;
+}
+.passion-container{
+    /* border: 2px solid red; */
+    margin-top: 115px;
+    max-width: 416px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+.passion-box{
+    max-width: 486px;
+    max-height: 486px;
+    /* border: 2px solid yellow; */
+    margin-top: 270px;
+    margin-left: 20px;
+}
+.passion-box .circle{
+    width: 440px;
+    height: 440px;
+    margin: 0px;
+}
+#menu {
+    display: block;
+}
+
+#darkmode {
+    position: absolute;
+    right: 7rem;
+    font-size: 2.6rem;
+    color: var(--text-color);
+    margin-bottom: .1rem;
+}
+
+.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+    display: none;
+    box-shadow: 0 .5rem 1rem;
+}
+.active{
+    display: block;
+
+}
+.navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem;
+    color: var(--text-color);
+}
+
+.navbar a:nth-child(1),
+.navbar a:nth-child(2) {
+    color: var(--text-color);
+}
+
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.navbar a::before {
+    display: none;
+}
+
+
+header {
+    width: 100%;
+}
+
+.logo {
+    font-size: 21.5px;
+    margin-top: 0px;
+}
+
+.content {
+    margin-left: 0px;
+}
+
+.content p {
+    font-size: 2.1rem;
+}
+
+section {
+    padding: 6rem 5%;
+}
+
+.content h3 {
+    font-size: 2.6rem;
+}
+
+.content h1 {
+    font-size: 3.1rem;
+}
+
+.content p {
+    font-size: 1.5rem;
+}
+
+.content .social-icon a {
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 1.8rem;
+    margin: 1rem 0.5rem 2rem 0;
+}
+
+.parent h5 {
+    position: absolute;
+    top: 0px;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 87px;
+    top: 21px;
+}
+
+.btn {
+    width: 237px;
+    height: 55px;
+    /* width: 290px; */
+}
+
+.passion-box .passion{
+    display: none;
+}
+/* Large screens (desktops) */
+
+/* #################################About section######################## */
+
+#about h1{
+    margin-top: 46px;
+}
+.mainabout {
+    /* border: 2px solid red; */
+    /* margin-top: -20px; */
+    flex-wrap: wrap;
+    padding: -1px;
+}
+.mainabout .aboutphoto{
+    margin-top: 93px;
+}
+.aboutpara p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+.abouttext .parent {
+    left: 7%;
+    top: 30px;
+}
+.parent h5{
+    left: 56px;
+}
+.education-section h1 {
+    /* border: 2px solid red; */
+    position: relative;
+    top: -26px;
+    left: 19%;
+}
+#about h1{
+    font-size: 43px;
+}
+.experience {
+    /* border: 2px solid red; */
+    width: 473px;
+}
+.experience .content ul li .experience-content{
+    width: 335px;
+}
+.experience .content {
+    text-align: center;
+    left: 44px;
+}
+.experience .content ul li .experience-content{
+    width: 291px;
+}
+.mainskill-container{
+    height: 173vh;
+}
+.mainphoto h1{
+    font-size: 38px;
+}
+.container{
+    flex-wrap: wrap;
+    width: 91vw;
+}
+
+.form-group .btn{
+    margin-left:15% ;
+}
+.form-group h3{
+    margin-left: 17%;
+}
+
+#contact .form-group{
+    width: 380px;
+}
+.form-group .form-row .text{
+    font-size: 17px;
+}
+.address{
+    width: 374px;
+}
+.addressmain{
+    flex-wrap: wrap;
+}
+.addressmain .addressicon{
+    width: 386px;
+}
+ .addressicon .social-icon{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 21px;
+    width: 100%;
+}
+.addressmain .bx {
+    font-size: 47px;
+}
+.addressboxicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5rem;
+    height: 7.5rem;
+}
