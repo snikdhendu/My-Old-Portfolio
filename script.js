@@ -1,3 +1,14 @@
+// open close menu in small device
+let menuicon=document.querySelector('#menu');
+let navbar=document.querySelector('.navbar');
+menuicon.onclick=()=>{
+    menuicon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+
+
+
 let sections =document.querySelectorAll('section');
 let navLinks=document.querySelectorAll('header nav a');
 
@@ -29,7 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // Sticky nav bar
         let header = document.querySelector(".header");
         header.classList.toggle("sticky", window.scrollY > 100);
+
+        menuicon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+
+
     };
+
 });
 
 // Dark-light mode JavaScript
