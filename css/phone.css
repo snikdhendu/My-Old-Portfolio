@@ -36,38 +36,38 @@ html {
     height: 450px;
 }
 .home .passion-container .passion-box{
-    left: -26px;
+    left: 12px;
 }
 .home .overlay {
     position: fixed;
-    top: 56rem;
-    left: 75%;
+    top: 59rem;
+    left: 74%;
     right: 0;
     transform: rotate(90deg) translate(-50%, 69%) scaleY(-2);
-    border-width: 27.9rem;
+    border-width: 23rem;
 }
 .home .passion-box .passion{
     padding: 13px 13px;
 }
-.home .passion-box .passion:nth-child(1){
-        transform: rotate(-90deg) translate(281px,-361px);
-    }
+.home .passion-box .passion:nth-child(1) {
+    transform: rotate(-90deg) translate(280px,-301px);
+}
     .home .passion-box .passion:nth-child(1) i{
         margin-right: 0;
 
     }
-    .home .passion-box .passion:nth-child(2){
-        transform: rotate(0deg) translate(152px,-223px);
+    .home .passion-box .passion:nth-child(2) {
+        transform: rotate(0deg) translate(148px,-160px);
     }
-    .home .passion-box .passion:nth-child(3){
-        transform: rotate(90deg) translate(287px,-60px);
+    .home .passion-box .passion:nth-child(3) {
+        transform: rotate(90deg) translate(287px,-14px);
     }
-    .home .passion-box .passion:nth-child(4){
-        transform: rotate(180deg) translate(438px,-220px);
+    .home .passion-box .passion:nth-child(4) {
+        transform: rotate(180deg) translate(432px,-152px);
     }
 .home .content {
-    height: 57.8rem;
-}
+        height: 35.8rem;
+    }
 .passion-container{
     /* border: 2px solid red; */
     margin-top: 115px;
@@ -80,12 +80,18 @@ html {
     max-height: 486px;
     /* border: 2px solid yellow; */
     margin-top: 270px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.passion-box .circle{
-    width: 440px;
-    height: 440px;
+.passion-box .circle {
+    width: 336px;
+    height: 336px;
     margin: 0px;
+}
+.home .passion-container .passion-box{
+    top: 40px;
 }
 #menu {
     display: block;
@@ -98,7 +104,9 @@ html {
     color: var(--text-color);
     margin-bottom: .1rem;
 }
-
+.header.sticky{
+    height: 62px;
+}
 .navbar {
     position: absolute;
     top: 100%;
@@ -221,7 +229,7 @@ section {
     top: 30px;
 }
 .parent h5{
-    left: 56px;
+    left: 91px;
 }
 .education-section h1 {
     /* border: 2px solid red; */
