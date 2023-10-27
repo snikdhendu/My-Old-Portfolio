@@ -66,7 +66,7 @@ html {
         transform: rotate(180deg) translate(432px,-152px);
     }
 .home .content {
-        height: 40.8rem;
+        height: 35.8rem;
     }
 .passion-container{
     /* border: 2px solid red; */
@@ -203,12 +203,15 @@ section {
 .passion-box .passion{
     display: none;
 }
+.parent h5{
+    left: 93px;
+}
 /* Large screens (desktops) */
 
 /* #################################About section######################## */
 
 #about h1{
-    margin-top: 46px;
+    margin-top: 77px;
 }
 .mainabout {
     /* border: 2px solid red; */
@@ -217,19 +220,56 @@ section {
     padding: -1px;
 }
 .mainabout .aboutphoto{
-    margin-top: 93px;
+    margin-top: 36px;
+}
+.mainabout .abouttext{
+    padding: 0px;
+}
+.mainabout .aboutphoto {
+
+    height: 310px;
+    width: 310px;
+}
+.aboutpara {
+    width: 309px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.glowingcircle .aboutimage {
+
+    width: 286px;
+    height: 287px;
+   
+}
+.aboutimage img {
+    max-width: 286px;
+
 }
 .aboutpara p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
-    padding: 5px;
+    padding: 0px;
+}
+.aboutpara{
+    width: 100%;
 }
 .abouttext .parent {
-    left: 7%;
+    left: 18%;
     top: 30px;
 }
-.parent h5{
-    left: 91px;
+.abouttext .parent h5 {
+    left: 41px;
+}
+
+.abouttext .btn {
+    width: 206px;
+    height: 55px;
+    /* width: 290px; */
+}
+.education-section{
+    margin-top: -177px;
 }
 .education-section h1 {
     /* border: 2px solid red; */
@@ -264,22 +304,37 @@ section {
     flex-wrap: wrap;
     width: 91vw;
 }
+/*################### skill section############# */
+#skill {
+    position: relative;
+    margin-top: -141px;
+}
+.mainskill-container {
+    height: 196vh;
+}
+.mainskill-container{
+    width: 100%;
+}
 
+
+
+
+/* ##############################################contact section####################################### */
 .form-group .btn{
-    margin-left:15% ;
+    margin-left:8% ;
 }
 .form-group h3{
-    margin-left: 17%;
+    margin-left: 11%;
 }
 
 #contact .form-group{
-    width: 380px;
+    width: 328px;
 }
 .form-group .form-row .text{
-    font-size: 17px;
+    font-size: 14px;
 }
 .address{
-    width: 374px;
+    width: 325px;
 }
 .addressmain{
     flex-wrap: wrap;
@@ -295,7 +350,7 @@ section {
     width: 100%;
 }
 .addressmain .bx {
-    font-size: 47px;
+    font-size: 38px;
 }
 .addressboxicon {
     display: flex;
@@ -303,4 +358,8 @@ section {
     align-items: center;
     width: 7.5rem;
     height: 7.5rem;
+}
+.addressmain h3 {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
