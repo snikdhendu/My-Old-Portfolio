@@ -371,3 +371,6 @@ section {
 .addressmain .bx {
     font-size: 29px;
 }
+.form-group .form-row .inputbox input, .form-row .col .textarea textarea {
+    font-size: 12px;
+}
