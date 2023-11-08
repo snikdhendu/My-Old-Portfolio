@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Snikdhendu's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="script.js">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -32,129 +32,15 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" media="screen and (max-width:700px)" href="css/phone.css">
-    <style>
-        .loader-wrapper {
-  --line-width: 5px;
-    --curtain-color: #120d34;
-  --outer-line-color: #a8dadc;
-  --middle-line-color: yellow;
-  --inner-line-color: #ff004f;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  z-index:1000;
-}
-
-.loader {
-  display:block;
-  position: relative;
-  top:50%;
-  left:50%;
-/*   transform: translate(-50%, -50%); */
-  width:150px;
-  height:150px;
-  margin:-75px 0 0 -75px;
-  border:var(--line-width) solid transparent;
-  border-top-color: var(--outer-line-color);
-  border-radius:100%;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-  z-index:1001;
-}
-
-.loader:before {
-  content:"";
-  position: absolute;
-  top:4px;
-  left:4px;
-  right:4px;
-  bottom:4px;
-  border:var(--line-width) solid transparent;
-  border-top-color: var(--inner-line-color);
-  border-radius:100%;
-  -webkit-animation: spin 3s linear infinite;
-          animation: spin 3s linear infinite;
-}
-
-.loader:after {
-  content:"";
-  position: absolute;
-  top:14px;
-  left:14px;
-  right:14px;
-  bottom:14px;
-  border:var(--line-width) solid transparent;
-  border-top-color: var(--middle-line-color);
-  border-radius:100%;
-  -webkit-animation: spin 1.5s linear infinite;
-          animation: spin 1.5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0%   { 
-    -webkit-transform: rotate(0deg); 
-      -ms-transform: rotate(0deg); 
-          transform: rotate(0deg);
-  }
-  100% { 
-    -webkit-transform: rotate(360deg); 
-      -ms-transform: rotate(360deg); 
-          transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0%   { 
-    -webkit-transform: rotate(0deg); 
-      -ms-transform: rotate(0deg); 
-          transform: rotate(0deg);
-  }
-  100% { 
-    -webkit-transform: rotate(360deg); 
-      -ms-transform: rotate(360deg); 
-          transform: rotate(360deg);
-  }
-}
-
-.loader-wrapper .loader-section {
-  position:fixed;
-  top:0;
-  background:var(--curtain-color);
-  width:51%;
-  height:100%;
-  z-index:1000;
-}
-
-.loader-wrapper .loader-section.section-left {
-  left:0
-}
-.loader-wrapper .loader-section.section-right {
-  right:0;
-}
-
-/* Loaded Styles */ 
-.loaded .loader-wrapper .loader-section.section-left {
-  transform: translateX(-100%);
-  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-}
-.loaded .loader-wrapper .loader-section.section-right {
-  transform: translateX(100%);
-  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-}
-.loaded .loader {
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-.loaded .loader-wrapper {
-  visibility: hidden;
-  transform:translateY(-100%);
-  transition: all .3s 1s ease-out;
-}
-    </style>
+    <link rel="icon" type="image/jpg" href="./images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Audiowide&family=Kanit:wght@300;400&family=Pacifico&family=Proza+Libre&family=Roboto:wght@100&family=Stick+No+Bills:wght@500;600&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!--------------------------------------- preloader section ------------------------------------------------------------------- -->
+
     <div class="loader-wrapper">
         <div class="loader">
         </div>
@@ -164,7 +50,7 @@
 
     <!------------------------------------------------------------ header section ----- --------------------------------------------------------------------->
     <header class="header">
-        <a href="" class="logo">Portfolio.</a>
+        <a href="https://www.linkedin.com/in/snikdhendu-pramanik/" class="logo"><span>S</span>nikdhendu.</a>
         <!------ nav section------ -->
         <nav class="navbar" data-aos="zoom-in">
             <a href="#home" class="active">Home</a>
@@ -376,7 +262,7 @@
             <div class="container">
 
                 <div class="panel active" style="background-image: url('images/makali.jpeg');">
-                    <h3>Explore The World</h3>
+                    <h3>Belive in Ma</h3>
                 </div>
 
                 <div class="panel" style="background-image: url('images/boat.jpeg');">
@@ -481,35 +367,18 @@
         <!-- </div> -->
     </section>
 
-
-
-
-
-
-
-
-
-
-
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <!-- <script src="script.js"></script> -->
-    <!-- <script>
-        function scrollToSection(sectionId) {
-            const section = document.querySelector(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script> -->
-    <!-- <script src="./script.js"></script> 
-    <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-
-
-<script>
-    window.addEventListener('load',function(){
-  document.querySelector('body').classList.add("loaded")  
-});
-</script>
+    <!------------------------------------------------- footer section---------------------------------------------------------------------------------------------- -->
+    <footer>
+        <div class="upparrowdiv">
+            <a class="uparrow" href=""><i class="bx bx-arrow-up"></i></a>
+        </div>
+        <div class="foottext">
+            <p>All rights reserved &copy; 2023 || Made by <a href="https://www.linkedin.com/in/snikdhendu-pramanik/">Snikdhendu Pramanik</a> with <i class='bx bxs-heart'></i></p> 
+        </div>
+        <div class="uparrow">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
 </body>
 
