@@ -387,6 +387,14 @@ section {
 }
 footer .foottext {
     font-size: 15px;
+        font-family: 'Abril Fatface', serif;
+font-family: 'Audiowide', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Proza Libre', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Stick No Bills', sans-serif;
+font-family: 'Young Serif', serif;
 }
 .foottext i{
     font-size: 17px;
