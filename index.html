@@ -32,9 +32,136 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" media="screen and (max-width:700px)" href="css/phone.css">
+    <style>
+        .loader-wrapper {
+  --line-width: 5px;
+  --curtain-color: #f1faee;
+  --outer-line-color: #a8dadc;
+  --middle-line-color: #457b9d;
+  --inner-line-color: #1d3557;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:1000;
+}
+
+.loader {
+  display:block;
+  position: relative;
+  top:50%;
+  left:50%;
+/*   transform: translate(-50%, -50%); */
+  width:150px;
+  height:150px;
+  margin:-75px 0 0 -75px;
+  border:var(--line-width) solid transparent;
+  border-top-color: var(--outer-line-color);
+  border-radius:100%;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  z-index:1001;
+}
+
+.loader:before {
+  content:"";
+  position: absolute;
+  top:4px;
+  left:4px;
+  right:4px;
+  bottom:4px;
+  border:var(--line-width) solid transparent;
+  border-top-color: var(--inner-line-color);
+  border-radius:100%;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+
+.loader:after {
+  content:"";
+  position: absolute;
+  top:14px;
+  left:14px;
+  right:14px;
+  bottom:14px;
+  border:var(--line-width) solid transparent;
+  border-top-color: var(--middle-line-color);
+  border-radius:100%;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0%   { 
+    -webkit-transform: rotate(0deg); 
+      -ms-transform: rotate(0deg); 
+          transform: rotate(0deg);
+  }
+  100% { 
+    -webkit-transform: rotate(360deg); 
+      -ms-transform: rotate(360deg); 
+          transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0%   { 
+    -webkit-transform: rotate(0deg); 
+      -ms-transform: rotate(0deg); 
+          transform: rotate(0deg);
+  }
+  100% { 
+    -webkit-transform: rotate(360deg); 
+      -ms-transform: rotate(360deg); 
+          transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper .loader-section {
+  position:fixed;
+  top:0;
+  background:var(--curtain-color);
+  width:51%;
+  height:100%;
+  z-index:1000;
+}
+
+.loader-wrapper .loader-section.section-left {
+  left:0
+}
+.loader-wrapper .loader-section.section-right {
+  right:0;
+}
+
+/* Loaded Styles */ 
+.loaded .loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+.loaded .loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+.loaded .loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.loaded .loader-wrapper {
+  visibility: hidden;
+  transform:translateY(-100%);
+  transition: all .3s 1s ease-out;
+}
+    </style>
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <div class="loader">
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+
     <!------------------------------------------------------------ header section ----- --------------------------------------------------------------------->
     <header class="header">
         <a href="" class="logo">Portfolio.</a>
@@ -47,7 +174,8 @@
             <a href="#contact">Contact Me</a>
         </nav>
         <div class="bx bx-sun" id="darkmode"></div>
-         <div class="bx bx-menu" id="menu"></div>
+
+        <div class="bx bx-menu" id="menu"></div>
     </header>
     <!--------------------------------------------------------------- home section--------------------------------------------------------------------------- -->
     <section id="home" class="home">
@@ -99,14 +227,15 @@
 
             </div>
         </div>
-        <div class="my-img" data-aos="fade-in">
+        <div class="my-img" >
             <img src="./images/collage_dress.png" alt="">
         </div>
     </section>
-    <section id="about">
+    <!--################################################ ABOUT section######################################################## -->
+     <section id="about">
         <h1>ABOUT <span>ME</span></h1>
         <div class="mainabout">
-            <div class="aboutphoto" data-aos="zoom-in">
+             <div class="aboutphoto" data-aos="zoom-in"> 
                 <div class="glowingcircle">
                     <span></span>
                     <span></span>
@@ -154,7 +283,7 @@
                         <li>
                             <div class="experience-content hidden">
                                 <img src="images/rrhs_logo.jpg" height="85px">
-                                <h2>Ramkishorekur Radhanagar High School</h2>
+                                <h2>Ramkishorepur Radhanagar High School</h2>
                                 <div class="experience-time">2015-2020 || Grade:90% (Secondary Exam)</div>
                                 <p>
                                     I had the honor of attending R.R.H.S School in DiamondHarbour, where I received an
@@ -192,50 +321,50 @@
 
     <!--################################################# skills section ######################################################################       -->
 
-    <section id="skill">
+     <section id="skill">
         <div id="about">
             <h1>MY <span>SKILL</span></h1>
         </div>
         <div class="mainskill-container" data-aos="fade-in">
             <div class="box">
-                <div class="circle" data-dots="70" data-percent="80" style="--bgColor: #ff0070"></div>
+                <div class="circle" data-dots="70" data-percent="60" style="--bgColor: #ff0070"></div>
                 <div class="text">
-                    <h2>80%</h2>
+                    <h2>60%</h2>
                     <small>C</small>
                 </div>
             </div>
             <div class="box">
-                <div class="circle" data-dots="70" data-percent="70" style="--bgColor: #0f0"></div>
+                <div class="circle" data-dots="70" data-percent="50" style="--bgColor: #0f0"></div>
                 <div class="text">
-                    <h2>70%</h2>
+                    <h2>50%</h2>
                     <small>C++</small>
                 </div>
             </div>
             <div class="box">
-                <div class="circle" data-dots="70" data-percent="60" style="--bgColor: #52a8ff"></div>
+                <div class="circle" data-dots="70" data-percent="50" style="--bgColor: #52a8ff"></div>
                 <div class="text">
-                    <h2>60%</h2>
+                    <h2>50%</h2>
                     <small>Python</small>
                 </div>
             </div>
             <div class="box">
-                <div class="circle" data-dots="70" data-percent="90" style="--bgColor: #52a8ff"></div>
+                <div class="circle" data-dots="70" data-percent="70" style="--bgColor: #52a8ff"></div>
                 <div class="text">
-                    <h2>90%</h2>
+                    <h2>70%</h2>
                     <small>HTML</small>
                 </div>
             </div>
             <div class="box">
-                <div class="circle" data-dots="70" data-percent="80" style="--bgColor: #ff0070"></div>
+                <div class="circle" data-dots="70" data-percent="60" style="--bgColor: #ff0070"></div>
                 <div class="text">
-                    <h2>80%</h2>
+                    <h2>60%</h2>
                     <small>CSS</small>
                 </div>
             </div>
             <div class="box">
-                <div class="circle" data-dots="70" data-percent="30" style="--bgColor: #0f0"></div>
+                <div class="circle" data-dots="70" data-percent="20" style="--bgColor: #0f0"></div>
                 <div class="text">
-                    <h2>30%</h2>
+                    <h2>20%</h2>
                     <small>JavaScript</small>
                 </div>
             </div>
@@ -247,15 +376,15 @@
             <div class="container">
 
                 <div class="panel active" style="background-image: url('images/makali.jpeg');">
-                    <h3>Ma kali </h3>
+                    <h3>Explore The World</h3>
                 </div>
 
                 <div class="panel" style="background-image: url('images/boat.jpeg');">
-                    <h3>Boat</h3>
+                    <h3>Wild Forest</h3>
                 </div>
 
                 <div class="panel" style="background-image: url('images/durgathakur.jpeg');">
-                    <h3>Ma Durga</h3>
+                    <h3>Sunny Beach</h3>
                 </div>
 
                 <div class="panel" style="background-image: url('images/sealdah.jpeg');">
@@ -263,12 +392,12 @@
                 </div>
 
                 <div class="panel" style="background-image: url('images/flower.jpeg');">
-                    <h3>Explore the-world</h3>
+                    <h3>Mountains - Clouds</h3>
                 </div>
             </div>
         </div>
         <script src="script.js"></script>
-    </section>
+    </section> 
     <!--########################################################## Contact section########################################################################## -->
     <section id="contact">
         <div id="about">
@@ -339,7 +468,7 @@
                             <h3>snikdhendupramanik@gmail.com</h3>
                         </i></div>
                 </div>
-                <div class="addressicon">
+                <div class="addressicon" >
                     <!-- <div class="social-icon"> -->
                     <div class="addressboxicon"><a href="https://www.linkedin.com/in/snikdhendu-pramanik/" class="smicon"><i class='bx bxl-linkedin'></i></a></div>
                     <div class="addressboxicon"><a href="https://github.com/snikdhendu" class="smicon"><i class='bx bxl-github'></i></a></div>
@@ -351,6 +480,7 @@
         </div>
         <!-- </div> -->
     </section>
+
 
 
 
@@ -375,7 +505,11 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 
 
-
+<script>
+    window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+</script>
 
 </body>
 
