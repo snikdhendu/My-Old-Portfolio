@@ -1,5 +1,7 @@
 /* RESPONSIVE */
-
+body {
+  font-family: 'Roboto', sans-serif;
+}
 section {
     max-width: 500px;
     min-height: 100vh;
