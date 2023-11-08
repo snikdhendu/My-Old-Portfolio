@@ -1,3 +1,7 @@
+// Preloader js
+window.addEventListener('load',function(){
+    document.querySelector('body').classList.add("loaded")  
+  });
 // open close menu in small device
 let menuicon=document.querySelector('#menu');
 let navbar=document.querySelector('.navbar');
@@ -5,9 +9,6 @@ menuicon.onclick=()=>{
     menuicon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
-
-
-
 
 let sections =document.querySelectorAll('section');
 let navLinks=document.querySelectorAll('header nav a');
@@ -58,7 +59,7 @@ darkmode.onclick = () => {
 };
 // Auto matic text in about section------------>ABOUT
 var typed = new Typed(".autoinput", {
-    strings: ['Cse Undergraduate', 'Coder', 'Technology Enthusiast', 'Passionate Photographer', 'Cloud Entusiast', 'ML learner'],
+    strings: ['Cse Undergraduate', 'Coder', 'Technology Enthusiast', 'Cloud Entusiast', 'ML learner'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
