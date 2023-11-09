@@ -1002,7 +1002,139 @@ section {
         box-shadow: 0 0 10px var(--bgColor);
     }
 }
+/*##################################################### Project section ######################################################################## */
+.projectdiv{
+    /* border: 2px solid red; */
+    height: 80vh;
+}
 
+.mywork h2 {
+	margin-bottom: 4rem;
+}
+.mywork-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	gap: 2.5rem;
+    margin-top: 42px;
+}
+.mywork-container .mywork-box {
+	position: relative;
+	border-radius: 2rem;
+	box-shadow: 0 0 1rem var(--bg-color);
+	overflow: hidden;
+	display: flex;
+}
+.mywork-box img {
+	width: 100%;
+	height: 23rem;
+	transition: .5s ease;
+}
+.mywork-box:hover img {
+	transform: scale(1.1);
+}
+.mywork-box .mywork-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 4rem;
+	transform: translateY(110%);
+	transition: .5s ease;
+}
+.mywork-box:hover .mywork-layer {
+	transform: translateY(0);
+}
+.mywork-layer h4 {
+	font-size: 2.4rem;
+    font-weight: 600;
+	filter: drop-shadow(0px 0px 4px #000);
+    color: var(--white-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.mywork-layer p {
+	font-size: 1.6rem;
+	margin: .3rem 0 1rem;
+	filter: drop-shadow(0px 0px 4px #000);
+    color: var(--white-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mywork-layer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* margin-left: 37%; */
+	width: 4rem;
+	height: 4rem;
+	background: transparent;
+	border-radius: 50%;
+    background: var(--main-color);
+    color: var(--white-color);
+    border: 0.2rem solid var(--main-color);
+    box-shadow: 0 0.2rem 0.5rem var(--main-color);
+    /* background-image: radial-gradient( circle at 50% 50%, #379ad6a0 0%, transparent ); */
+}
+
+.mywork-layer a i {
+	font-size: 1.5rem;
+	color: var(--inner-line-color);
+}
+.used_skills img {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border-style: double;
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+.show_more button {
+	display: inline-block;
+	padding: 1rem 2.8rem;
+	background: var(--main-color);
+	border-radius: 4rem;
+	margin-left: 43%;
+	margin-top: 3rem;
+	box-shadow: 0 0 1rem var(--main-color);
+	font-size: 1.6rem;
+	color: var(--white-color);
+	letter-spacing: .1rem;
+	font-weight: 600;
+	transition: .5s ease;
+    border-radius: 22px;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    /* border: 2px solid red; */
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+}
+.show_more button:hover {
+	box-shadow: none;
+}
+@media (max-width: 617px) {
+	.mywork-container {
+		grid-template-columns: 1fr;
+	}
+	.skills .container {
+		margin-left: 0px;
+		margin-right: 0px;
+		left: 0;
+		width: 580px;
+	}
+	.skills .container .name {
+		font-size: 10px;
+	}
+}
 /*############################################## Contact section################################################################################ */
 #contact .container{
     border: 2px solid var(--main-color);
