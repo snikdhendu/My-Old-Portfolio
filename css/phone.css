@@ -193,7 +193,9 @@ section {
     font-size: 1.8rem;
     margin: 1rem 0.5rem 2rem 0;
 }
-
+.bottom{
+    left: 143px;
+}
 .parent h5 {
     position: absolute;
     top: 0px;
