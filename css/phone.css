@@ -237,6 +237,20 @@ section {
     height: 310px;
     width: 310px;
 }
+.firsttext{
+   font-family: 'Poppins', sans-serif;
+}
+.secondtext {
+    /* border: 2px solid palevioletred; */
+    margin: 18px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    /* display: inline-block; */
+    font-family: 'Audiowide', cursive;
+    width: 100%;
+}
 .aboutpara {
     width: 309px;
     align-items: center;
