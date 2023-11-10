@@ -166,7 +166,8 @@ header {
 }
 
 .content p {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
+   font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -246,7 +247,7 @@ section {
     align-items: center;
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: left;
   
 }
 .glowingcircle .aboutimage {
@@ -261,7 +262,7 @@ section {
 }
 .aboutpara p {
   font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0px;
 }
 .aboutpara{
