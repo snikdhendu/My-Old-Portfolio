@@ -1,17 +1,15 @@
 /* RESPONSIVE */
-body {    font-family: 'Abril Fatface', serif;
-font-family: 'Audiowide', sans-serif;
-font-family: 'Kanit', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Proza Libre', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Stick No Bills', sans-serif;
-font-family: 'Young Serif', serif;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Audiowide&family=Kanit:wght@300;400&family=Pacifico&family=Poppins:wght@300&family=Proza+Libre&family=Roboto:wght@100&family=Stick+No+Bills:wght@500;600&family=Young+Serif&display=swap');
+body {
+
+    font-family: 'Poppins', sans-serif;
+ 
+  }
 section {
     max-width: 500px;
     min-height: 100vh;
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
