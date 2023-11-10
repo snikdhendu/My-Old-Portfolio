@@ -213,6 +213,11 @@ section {
 .parent h5{
     left: 93px;
 }
+.passion h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    
+}
 /* Large screens (desktops) */
 
 /* #################################About section######################## */
