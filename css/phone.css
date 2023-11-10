@@ -177,7 +177,7 @@ section {
 }
 
 .content p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
       font-family: 'Poppins', sans-serif;
 }
 
@@ -285,6 +285,9 @@ section {
     top: -26px;
     left: 19%;
 }
+.experience .content ul li .experience-content p{
+  font-weight:500
+}
 #about h1{
     font-size: 43px;
 }
@@ -322,6 +325,9 @@ section {
 }
 .mainskill-container{
     width: 100%;
+}
+.panel.active h3{
+   font-family: 'Poppins', sans-serif;
 }
 /*############################3 project section #################################### */
 
@@ -372,8 +378,11 @@ margin-left: 28%;
     height: 7.5rem;
 }
 .addressmain h3 {
-    font-size: 16px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.address h2{
+  font-family: 'Poppins', sans-serif;
 }
 .addressboxicon a{
     width: 5.5rem;
