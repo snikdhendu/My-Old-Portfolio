@@ -59,7 +59,7 @@ darkmode.onclick = () => {
 };
 // Auto matic text in about section------------>ABOUT
 var typed = new Typed(".autoinput", {
-    strings: ['Cse Undergraduate', 'Coder', 'Technology Enthusiast', 'Cloud Entusiast', 'ML learner'],
+    strings: ['Cse Undergraduate', 'Coder', 'Technology EXplorer', 'Cloud Entusiast', 'ML learner'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
