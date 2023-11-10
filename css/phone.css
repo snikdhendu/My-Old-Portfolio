@@ -164,12 +164,6 @@ header {
 .content {
     margin-left: 0px;
 }
-
-.content p {
-    font-size: 1.8rem;
-   font-family: 'Poppins', sans-serif;
-}
-
 section {
     padding: 6rem 5%;
 }
@@ -183,7 +177,8 @@ section {
 }
 
 .content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+      font-family: 'Poppins', sans-serif;
 }
 
 .content .social-icon a {
