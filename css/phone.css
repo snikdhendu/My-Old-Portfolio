@@ -408,3 +408,7 @@ font-family: 'Young Serif', serif;
 footer .uparrow i {
     font-size: 22px;
 }
+/* this is not footer section */
+  .bottom{
+      left: 87px;
+  }
