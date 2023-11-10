@@ -309,7 +309,8 @@ section {
     height: 173vh;
 }
 .mainphoto h1{
-    font-size: 38px;
+    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     flex-wrap: wrap;
@@ -342,7 +343,8 @@ margin-left: 28%;
     margin-left:8% ;
 }
 .form-group h3{
-    margin-left: 11%;
+    margin-left: 12%;
+  font-family: 'Poppins', sans-serif;
 }
 
 #contact .form-group{
