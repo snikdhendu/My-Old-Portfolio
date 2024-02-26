@@ -351,8 +351,13 @@ section {
 }
 /*############################3 project section #################################### */
 
-.show_more button {
-margin-left: 28%;
+.book{
+    width: 304px;
+    height: 202px;
+}
+.mywork-box .mywork-layer{
+    height: 60% ;
+    /* width: 60%; */
 }
 
 
