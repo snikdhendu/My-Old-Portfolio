@@ -359,6 +359,14 @@ section {
     height: 60% ;
     /* width: 60%; */
 }
+.link{
+    justify-content: space-evenly;
+}
+
+.mywork-box .mywork-layer h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 
 
 
