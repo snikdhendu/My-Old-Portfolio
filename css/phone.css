@@ -453,7 +453,11 @@ footer .uparrow i {
 .content .bottom{
     left:144px;
 }
-    
+/* ###################### loader css ############################### */
+.loader {
+    left: 38%;
+    top: 41%;
+}
   footer .foottext{
     font-size: 10px;
   }
