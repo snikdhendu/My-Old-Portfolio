@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.loader-wrapper').classList.add('loaded');
         document.querySelector('.main-content').style.display = 'block'; // Display main content
         document.querySelector('.main-content').classList.add('show'); // Add class for animation
-    }, 5000);
+    }, 4000);
 });
 
 // open close menu in small device
