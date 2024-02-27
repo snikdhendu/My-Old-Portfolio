@@ -136,7 +136,7 @@
     top: 50%;
     width: 100px;
     height: 100px;
-    position: absolute;
+    position: fixed;
 }
 
 .loader .loader-inner-1,
